@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selamat Hari Guru</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #d1d1d1;
+      --bg-color: #fff5f5;
+      --border-color: #f8c7c7;
+      --text-color: #ffffff;
+      --shadow-color: rgba(0,0,0,0.1);
+    }
+
+    :root {
+    --text-strong: rgba(255, 255, 255, 0.9);
+    --text-medium: rgba(255, 255, 255, 0.75);
+    --text-light: rgba(0,0,0,0.55);
+  }
+
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+  html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  }
+    
+  body {
+  font-family: 'Cormorant Garamond', serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.8;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: 
+    url("background.jpg"),
+    radial-gradient(circle at 10% 20%, rgba(216, 90, 90, 0.05) 0%, transparent 30%),
+    radial-gradient(circle at 90% 80%, rgba(216, 90, 90, 0.05) 0%, transparent 30%);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+    @media (max-width: 768px) {
+  body {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+    
+    .page-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 850px;
+      padding: 30px;
+      width: 100%;
+      box-sizing: border-box;
+      position: relative; 
+    }
+    
+   .decoration-top {
+    position: fixed;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    opacity: 0.8;
+    z-index: 100;
+    pointer-events: none; 
+  }
+    
+    .letter-container {
+      max-width: 650px;
+      padding: 50px;
+      background: rgba(169, 164, 164, 0.208);  
+      box-shadow: 0 10px 30px var(--shadow-color);
+      border-radius: 12px;
+      height: auto;
+      max-height: 80vh;
+      overflow-y: auto;
+      backdrop-filter: blur(8px);          
+      -webkit-backdrop-filter: blur(8px);  
+    }
+
+    
+    .letter-container::before {
+      content: '';
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      right: 15px;
+      bottom: 15px;
+      border-radius: 4px;
+      pointer-events: none;
+    }
+    
+    .letter-container::after {
+      content: '';
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      width: 100%;
+      background-color: rgba(0,0,0,0.02);
+      border-radius: 8px;
+      z-index: -1;
+    }
+    
+    h1 {
+      font-family: 'Dancing Script', cursive;
+      color: var(--primary-color);
+      text-align: center;
+      font-size: 38px;
+      margin-bottom: 30px;
+      font-weight: 700;
+    }
+    
+    .date {
+      text-align: right;
+      margin-bottom: 30px;
+      font-style: italic;
+      font-weight: bold;
+      color: var(--text-medium);
+    }
+    
+    .greeting {
+      font-weight: 600;
+      margin-bottom: 25px;
+      font-size: 22px;
+      color: var(--text-strong);
+    }
+    
+    .body-text {
+      margin-bottom: 30px;
+      text-align: justify;
+      font-size: 18px;
+      color: var(--text-medium);
+      font-weight: bold;
+    }
+    
+    .body-text p:first-letter {
+      font-size: 26px;
+      color: var(--text-strong);
+    }
+    
+    .closing {
+      font-weight: 600;
+      margin-bottom: 20px;
+      text-align: right;
+      font-size: 20px;
+    }
+    
+    .signature {
+      text-align: right;
+      font-family: 'Dancing Script', cursive;
+      font-size: 28px;
+      margin-top: 10px;
+    }
+    
+    .heart {
+      color: var(--primary-color);
+      font-size: 24px;
+      display: inline-block;
+      animation: beat 1.5s infinite alternate;
+      transform-origin: center;
+    }
+    
+    .red-rose {
+      max-width: 80px;
+      position: relative;
+      bottom: 20px;
+      right: 20px;
+      opacity: 0.7;
+      transform: rotate(15deg);
+      pointer-events: none;
+    }
+    
+    .decoration-divider {
+      margin: 20px 0;
+      text-align: center;
+      color: var(--primary-color);
+      font-size: 20px;
+      letter-spacing: 10px;
+    }
+    
+    @keyframes beat {
+      to {
+        transform: scale(1.2);
+      }
+    }
+    
+    @media (max-width: 768px) {
+    .letter-container {
+        padding: 30px;
+        margin: 20px;
+        height: 700px;
+      }
+      
+        body {
+        background-image: url("background.jpeg");
+        background-size: cover;
+        background-position: center;
+      }
+      
+      h1 {
+        font-size: 32px;
+      }
+      
+      .body-text {
+        font-size: 16px;
+      }
+      
+      .decoration-top {
+        width: 45%;
+      }
+
+      .red-rose {
+      max-width: 80px;
+      bottom: 50px;
+      right: -55%;
+    }
+      
+    }
+  </style>
+</head>
+<body>
+  <div class="page-container">
+    
+    <div class="letter-container">
+      <div class="date">November 25, 2025</div>
+      
+      <h1>Dear, Love</h1>
+      
+      <div class="greeting">...</div>
+      
+      <div class="body-text">
+        <p>Being with you feels like choosing the same person every day without ever getting tired of the decision. Two men, standing in a world that often expects us to be unbreakable, yet finding the safest version of ourselves in each other. With you, I don’t have to explain my softness or hide my fears. Loving you feels quiet, steady, and deeply intentional just like something meant to be protected rather than displayed..</p>
+        
+        <div class="decoration-divider">❦ ❦ ❦</div>
+        
+        <p>I love the way you stay, not only when things are easy, but especially when they are heavy. In the moments when words fail, your presence speaks for you, reminding me that love doesn’t always need grand gestures. Sometimes it’s just staying, listening, and choosing not to leave. In your arms, I’ve learned that affection can be strong without being loud, and devotion can exist without needing permission.</p>
+        
+        <div class="decoration-divider">❦ ❦ ❦</div>
+        
+        <p>If the world ever makes us feel like we have to justify what we share, I hope you remember this: I choose you without hesitation. Not because loving you is simple, but because it is honest. I don’t need a perfect future written in clear lines—I just want a life where I get to walk beside you, as someone who loves you fully, openly, and again and again.</p>
+        
+        <div class="decoration-divider">❦ ❦ ❦</div>
+        
+        <p>And in the end, no matter how loud the world gets or how uncertain tomorrow feels, I want you to know that my love for you remains gentle but unwavering. I don’t promise perfection or easy days, only consistency to showing up, choosing you, and holding space for everything we are becoming. If love is a place, then you are where my heart rests, and with you, I am always home.</p>
+      </div>
+      
+      <div class="closing">With love,</div>
+      
+      <div class="signature">Kenji<span class="heart"></span></div>
+      <img class="red-rose" src="stamp.png" alt="Red rose">
+    </div>
+  </div>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
